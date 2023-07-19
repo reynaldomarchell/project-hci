@@ -1,6 +1,6 @@
 # KTP Online
 
-This project I made for completing Human and Computer Interaction courses. Basically this is just front-end side without any back-end inside. I'm using Bootstrap 5 for the styles, and JavaScript for input logic.
+I made this project for completing Human and Computer Interaction courses. Basically this is just front-end side without any back-end inside. I'm using Bootstrap 5 for the styles, and JavaScript for input logic.
 
 ![preview img](assets/home.png)
 ![preview img](assets/contact.png)
