@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./assets/bg-home.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 20px;
+}
+
+:root {
+    --main-color: #e6b30e;
+}
+
+.act,
+.navbar ul li a:hover {
+    color: var(--main-color) !important;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.container-fluid .theme-text {
+    color: var(--main-color) !important;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.theme-text {
+    color: var(--main-color) !important;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 60vh;
+    width: 70%;
+}
+
+.middle h1 {
+    font-size: 70px;
+}
+
+.btn {
+    margin-left: 0px;
+    margin-right: 80px;
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #614d0a;
+    color: black;
+}
+
+btn-primary:active {
+    background-color: #614d0a;
+}
+
+.btn-secondary {
+    background-color: rgb(95, 95, 95);
+    color: #f2f2f2;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(144, 144, 144);
+    color: #f2f2f2;
+}
+
+btn-secondary:active {
+    background-color: rgb(144, 144, 144);
+}

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./assets/bg-home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.header h1 {
+    color: #0066cc;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666666;
+    font-size: 18px;
+}
+
+.content {
+    margin-bottom: 30px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.content h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.content label {
+    font-weight: bold;
+}
+
+.content input[type="text"],
+.content input[type="date"],
+.content select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.content select {
+    height: 40px;
+}
+
+.content input[type="text"]:focus,
+.content input[type="date"]:focus,
+.content select:focus {
+    border-color: #0066cc;
+}
+
+.content .perempuan {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+.domisili {
+    margin-bottom: 30px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.domisili h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.domisili label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.domisili input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.domisili input[type="text"]:focus {
+    border-color: #0066cc;
+}
+
+.submission {
+    margin-bottom: 30px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.submission h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.submission p {
+    color: #666666;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.submission label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.submission input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submission .desc-file {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: #0052a3;
+}
+
+submit:active {
+    background-color: #003d80;
+}

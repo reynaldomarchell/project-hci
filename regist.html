@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daftar KTP Online</title>
+
+    <link href="./assets/garuda.png" rel="icon">
+    <link href="./assets/garuda.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="regist.css">
+</head>
+<body>
+    <div class="container">
+        <a href="./home.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0066cc" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+            </svg>
+        </a>
+
+        <div class="header">
+            <h1>Pendaftaran KTP Baru</h1>
+            <p>Isilah form pendaftaran dengan data-data yang benar.</p>
+        </div>
+
+        <div class="content">
+            <h2>Data Diri</h2>
+            <label for="nik">NIK</label> <br>
+            <input type="text" class="nik" placeholder="NIK">
+            <label for="nama-depan">Nama Lengkap</label> <br>
+            <input type="text" class="nama-depan" placeholder="Nama depan">
+            <input type="text" class="nama-belakang" placeholder="Nama belakang"> <br>
+            <label for="jenis-kelamin">Jenis Kelamin</label> <br>
+            <input type="radio" name="jk" class="laki-laki" value="Laki-laki"> Laki-laki
+            <input type="radio" name="jk" class="perempuan" value="Perempuan"> Perempuan <br>
+            <label for="tempat-lahir">Tempat Lahir</label> <br>
+            <input type="text" class="tempat-lahir" placeholder="Kota"> <br>
+            <label for="tanggal-lahir">Tanggal Lahir</label> <br>
+            <input type="date" class="tanggal-lahir"> <br>
+            <label for="golongan-darah">Golongan Darah</label> <br>
+            <select name="golongan-darah" class="golongan-darah">
+                <option selected disabled>Pilih Golongan Darah Anda</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select> <br>
+            <label for="agama">Agama</label> <br>
+            <select name="agama" class="agama">
+                <option selected disabled>Pilih Agama Anda</option>
+                <option value="Islam">Islam</option>
+                <option value="Protestan">Protestan</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Khonghucu">Khonghucu</option>
+            </select> <br>
+            <label for="status">Status Perkawinan</label> <br>
+            <select name="status" class="status">
+                <option selected disabled>Pilih Status Perkawinan Anda</option>
+                <option value="Belum Kawin">Belum Kawin</option>
+                <option value="Kawin">Kawin</option>
+                <option value="Cerai Hidup">Cerai Hidup</option>
+                <option value="Cerai Mati">Cerai Mati</option>
+            </select> <br>
+            <label for="kewarganegaraan">Kewarganegaraan</label> <br>
+            <select name="kewarganegaraan" class="kewarganegaraan">
+                <option selected disabled>Pilih Kewarganegaraan Anda</option>
+                <option value="WNI">WNI</option>
+                <option value="WNA">WNA</option>
+            </select> <br>
+            <label for="pekerjaan">Pekerjaan</label> <br>
+            <input type="text" class="pekerjaan"> <br>
+        </div>
+
+        <div class="domisili">
+            <h2>Domisili</h2>
+            <label for="alamat">Alamat</label>
+            <input type="text" class="alamat"> <br>
+            <label for="rt">RT</label>
+            <input type="text" class="rt"> <br>
+            <label for="rw">RW</label>
+            <input type="text" class="rw"> <br>
+            <label for="kelurahan">Kelurahan/Desa</label>
+            <input type="text" class="kelurahan"> <br>
+            <label for="kecamatan">Kecamatan</label>
+            <input type="text" class="kecamatan"> <br>
+            <label for="kota">Kota/Kabupaten</label>
+            <input type="text" class="kota"> <br>
+            <label for="provinsi">Provinsi</label>
+            <input type="text" class="provinsi"> <br>
+        </div>
+
+        <div class="submission">
+            <h2>Unggah Berkas</h3>
+            <p class="desc-file">Unggah berkas yang dibutuhkan dengan format yang sesuai dan jelas.</p>
+            <label for="kk">Kartu Keluarga</label>
+            <p>Format file dalam .png atau .jpg dengan ukuran maksimal 10MB</p>
+            <input type="file" class="kk" name="kk"> <br>
+            <label for="foto">Foto Diri</label>
+            <p>Foto harus dengan background polos, potrait, format .png atau .jpg, dan ukuran minimal 120KB maksimal 10MB</p>
+            <input type="file" class="foto" name="foto"> <br>
+            <label for="surat-rt">Surat Pengantar RT</label>
+            <p>Format file dalam .png atau .jpg dengan ukuran maksimal 10MB</p>
+            <input type="file" class="surat-rt" name="surat-rt"> <br>
+            <label for="surat-rw">Surat Pengantar RW</label>
+            <p>Format file dalam .png atau .jpg dengan ukuran maksimal 10MB</p>
+            <input type="file" class="surat-rw" name="surat-rw"> <br>
+            <label for="surat-domisili">Surat Keterangan Domisili</label>
+            <p>Format file dalam .png atau .jpg dengan ukuran maksimal 10MB</p>
+            <input type="file" class="surat-domisili" name="surat-domisili"> <br>
+            <label for="ttd">Tanda Tangan</label>
+            <p>Format file dalam .png atau .jpg dengan ukuran maksimal 10MB</p>
+            <input type="file" class="ttd" name="ttd"> <br>
+        </div>
+
+        <button class="submit">Submit Data</button>
+    </div>
+
+    <script src="regist.js"></script>
+
+</body>
+</html>
